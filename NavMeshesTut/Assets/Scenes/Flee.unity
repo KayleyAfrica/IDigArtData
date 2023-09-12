@@ -326,8 +326,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 1, z: 0.4}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 236725740}
+  m_Children: []
   m_Father: {fileID: 92894227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &47093865
@@ -486,22 +485,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52817845}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!208 &52817850
-NavMeshObstacle:
+--- !u!114 &52817850
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52817845}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 2
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &85648420
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,8 +636,8 @@ GameObject:
   m_Component:
   - component: {fileID: 92894227}
   - component: {fileID: 92894228}
-  - component: {fileID: 92894229}
   - component: {fileID: 92894230}
+  - component: {fileID: 92894231}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -657,6 +659,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 47093863}
+  - {fileID: 236725740}
   - {fileID: 391404652}
   - {fileID: 612093655}
   m_Father: {fileID: 0}
@@ -687,7 +690,21 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &92894229
+--- !u!114 &92894230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92894226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb344ac5a2020745b442ca2486dce0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  healthTxt: {fileID: 97421330}
+--- !u!114 &92894231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -706,20 +723,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   groundCheck: {fileID: 391404652}
---- !u!114 &92894230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92894226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb344ac5a2020745b442ca2486dce0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  healthTxt: {fileID: 97421330}
 --- !u!1 &96723343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,10 +1244,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.8700001, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 47093863}
+  m_Father: {fileID: 92894227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &236725741
 MonoBehaviour:
@@ -9908,7 +9911,6 @@ GameObject:
   - component: {fileID: 1967972865}
   - component: {fileID: 1967972866}
   - component: {fileID: 1967972867}
-  - component: {fileID: 1967972868}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
@@ -10059,21 +10061,6 @@ MonoBehaviour:
   ChaseRange: 20
   SearchSpeed: 2
   wanderInterval: 5
---- !u!114 &1967972868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967972860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4acc811aa083c1e4d9082878801961db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1 &1970737063
 GameObject:
   m_ObjectHideFlags: 0
