@@ -748,7 +748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throwingPoint: {fileID: 1425688249}
   projectile: {fileID: 3238025858481284394, guid: 2d9d1f3dda64acf43b4f3b3ce0bcfae5, type: 3}
-  speed: 20
+  speed: 5.9
   empty: {fileID: 1476619288}
 --- !u!1 &96723343
 GameObject:
