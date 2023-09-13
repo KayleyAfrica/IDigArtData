@@ -747,7 +747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwingPoint: {fileID: 1425688249}
-  projectile: {fileID: 2776551661820480824, guid: e5d69fd5ab4c29f4cb90f71a411d12aa, type: 3}
+  projectile: {fileID: 555867774}
   speed: 5.9
   empty: {fileID: 1476619288}
 --- !u!1 &96723343
@@ -2246,6 +2246,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   promptMessage: Bulb Switch
   bulb: {fileID: 1442856729}
+--- !u!1 &555867774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2776551661820480824, guid: e5d69fd5ab4c29f4cb90f71a411d12aa, type: 3}
+  m_PrefabInstance: {fileID: 2787455887422145729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &555867779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4302002646288286750, guid: e5d69fd5ab4c29f4cb90f71a411d12aa, type: 3}
@@ -16509,7 +16514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2776551661820480824, guid: e5d69fd5ab4c29f4cb90f71a411d12aa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4302002646288286750, guid: e5d69fd5ab4c29f4cb90f71a411d12aa, type: 3}
       propertyPath: m_RootOrder
@@ -16521,7 +16526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4302002646288286750, guid: e5d69fd5ab4c29f4cb90f71a411d12aa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.745
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: 4302002646288286750, guid: e5d69fd5ab4c29f4cb90f71a411d12aa, type: 3}
       propertyPath: m_LocalPosition.z
