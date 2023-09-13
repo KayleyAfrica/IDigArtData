@@ -7,6 +7,7 @@ TagManager:
   - NotWalkable
   - Enemy
   - Wall
+  - Decoy
   layers:
   - Default
   - TransparentFX

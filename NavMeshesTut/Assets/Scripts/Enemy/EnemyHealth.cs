@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    Zombie zombie;
+    AIAgents agents;
     private float range = 3f;
     [SerializeField]
     private LayerMask mask;
     void Start()
     {
-        zombie = FindObjectOfType<Zombie>();
+        agents = FindObjectOfType<AIAgents>();
     }
 
 
@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
         if(Physics.Raycast(ray, out hit, range, mask))
         {
             Vector3 newDirection = Vector3.Cross(hit.normal, transform.forward);
-            zombie.agent.SetDestination(newDirection + transform.position *  range);
+            agents.agent.SetDestination(newDirection + transform.position *  range);
         }
     }
 }
