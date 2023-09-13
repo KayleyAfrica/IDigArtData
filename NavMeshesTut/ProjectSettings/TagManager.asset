@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NotWalkable
   - Enemy
+  - Wall
   layers:
   - Default
   - TransparentFX
