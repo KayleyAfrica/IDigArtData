@@ -5,25 +5,22 @@ public class AIAgents : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
-    public Transform decoy;
+    private Transform decoy;
     public float SearchRange = 50f;
     public float ChaseRange = 20f;
     public float SearchSpeed = 2f;
 
     private bool isSearching = true;
 
-    //wanderingg behavior
+    //wandering behavior
     private Vector3 randomDestination;
     private float wanderTimer = 0f;
     public float wanderInterval = 5f;
 
     void Update()
     {
-
-
         if (isSearching)
         {
-            // Rotate around the Y-axis to search
             transform.Rotate(Vector3.up, SearchSpeed * Time.deltaTime);
         }
         else
@@ -31,7 +28,7 @@ public class AIAgents : MonoBehaviour
             Wander();
         }
 
-        if(Vector3.Distance(transform.position, player.position) <= SearchRange)
+        if (Vector3.Distance(transform.position, player.position) <= SearchRange)
         {
             Vector3 direction = player.position - transform.position;
             Ray ray = new Ray(transform.position, direction.normalized);
@@ -42,7 +39,6 @@ public class AIAgents : MonoBehaviour
             {
                 if (hit.transform.tag == "Player")
                 {
-
                     agent.SetDestination(player.position);
                     if (Vector3.Distance(transform.position, player.position) <= ChaseRange)
                     {
@@ -53,7 +49,7 @@ public class AIAgents : MonoBehaviour
             }
         }
 
-        if (Vector3.Distance(transform.position, decoy.position) <= SearchRange)
+        if (decoy != null && Vector3.Distance(transform.position, decoy.position) <= SearchRange)
         {
             Vector3 direction = decoy.position - transform.position;
             Ray ray = new Ray(transform.position, direction.normalized);
@@ -64,7 +60,6 @@ public class AIAgents : MonoBehaviour
             {
                 if (hit.transform.tag == "Decoy")
                 {
-                    print("Found it");
                     agent.SetDestination(decoy.position);
                     if (Vector3.Distance(transform.position, decoy.position) <= ChaseRange)
                     {
@@ -73,7 +68,6 @@ public class AIAgents : MonoBehaviour
                     }
                 }
             }
-           
         }
     }
 
@@ -89,5 +83,11 @@ public class AIAgents : MonoBehaviour
 
             wanderTimer = 0f;
         }
+    }
+
+    // Add a method to set the decoy
+    public void SetDecoy(Transform newDecoy)
+    {
+        decoy = newDecoy;
     }
 }
