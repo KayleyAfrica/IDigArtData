@@ -85,7 +85,6 @@ public class AIAgents : MonoBehaviour
         }
     }
 
-    // Add a method to set the decoy
     public void SetDecoy(Transform newDecoy)
     {
         decoy = newDecoy;
