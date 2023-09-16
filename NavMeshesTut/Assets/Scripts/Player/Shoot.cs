@@ -11,11 +11,6 @@ public class Shoot : MonoBehaviour
     public GameObject empty;
     public AIAgents[] aiAgent; 
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         // I Used L for now, but anything is fine
@@ -25,6 +20,7 @@ public class Shoot : MonoBehaviour
             Rigidbody rb = Projectile.GetComponent<Rigidbody>();
             rb.AddForce(throwingPoint.forward * speed, ForceMode.Impulse);
             Projectile.transform.parent = empty.transform;
+            Destroy(Projectile, 15f);
 
             
             foreach (AIAgents aiAgent in aiAgent)
