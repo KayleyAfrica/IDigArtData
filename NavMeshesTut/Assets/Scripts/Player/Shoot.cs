@@ -9,14 +9,11 @@ public class Shoot : MonoBehaviour
     //that way they don't flood the hierarchy
     //keeps things a bit organised
     public GameObject empty;
-    private AIAgents aiAgent; 
+    public AIAgents[] aiAgent; 
 
     void Start()
     {
-        // This Finds the 'AIAgents' script on the AI GameObject
-        aiAgent = GameObject.FindGameObjectWithTag("Enemy").GetComponent<AIAgents>();
-        // I added this line just in case the above line fails
-        aiAgent = FindObjectOfType<AIAgents>();
+
     }
 
     void Update()
@@ -29,11 +26,12 @@ public class Shoot : MonoBehaviour
             rb.AddForce(throwingPoint.forward * speed, ForceMode.Impulse);
             Projectile.transform.parent = empty.transform;
 
-            // we want to check if the AIAgents script reference is set && is not null
-            if (aiAgent != null)
+            
+            foreach (AIAgents aiAgent in aiAgent)
             {
                 // Set the decoy for the AI agent
                 aiAgent.SetDecoy(Projectile.transform);
+                aiAgent.SetIsSearching(false);
             }
         }
     }

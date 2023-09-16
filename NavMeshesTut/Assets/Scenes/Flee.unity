@@ -750,6 +750,10 @@ MonoBehaviour:
   projectile: {fileID: 2776551661820480824, guid: e5d69fd5ab4c29f4cb90f71a411d12aa, type: 3}
   speed: 5.9
   empty: {fileID: 1476619288}
+  aiAgent:
+  - {fileID: 1967972867}
+  - {fileID: 447654272}
+  - {fileID: 1810745600}
 --- !u!1 &96723343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,7 +1725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &447654271
 Transform:
   m_ObjectHideFlags: 0
@@ -14870,7 +14874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1810745599
 Transform:
   m_ObjectHideFlags: 0

@@ -89,4 +89,9 @@ public class AIAgents : MonoBehaviour
     {
         decoy = newDecoy;
     }
+
+    public void SetIsSearching(bool value)
+    {
+        isSearching = value;
+    }
 }
