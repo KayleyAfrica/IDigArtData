@@ -8,6 +8,7 @@ public class TechDoors : Interactable
     protected override void Interact()
     {
         isOpen = !isOpen;   
-        door.gameObject.GetComponent<Animator>().SetBool("isOpen", isOpen);        
+        door.gameObject.GetComponent<Animator>().SetBool("isOpen", isOpen);
+        door.GetComponent<AudioSource>().Play();
     }
 }
