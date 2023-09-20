@@ -10,5 +10,6 @@ public class FinalDoor : Interactable
     protected override void Interact()
     {
         door.GetComponent<Animator>().SetTrigger("OpenDoor");
+        door.GetComponent<AudioSource>().Play();
     }
 }
