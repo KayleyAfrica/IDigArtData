@@ -7014,7 +7014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 171496241}
   m_Layer: 0
-  m_Name: Beacon Lights (5)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7771,7 +7771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 216389788}
   m_Layer: 0
-  m_Name: Beacon Lights (2)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12692,7 +12692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 357724935}
   m_Layer: 0
-  m_Name: Beacon Lights (7)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18619,7 +18619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 439848830}
   m_Layer: 0
-  m_Name: Beacon Lights (10)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30591,7 +30591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 698026666}
   m_Layer: 0
-  m_Name: Beacon Lights (12)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37117,7 +37117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 863287864}
   m_Layer: 0
-  m_Name: Beacon Lights (1)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48499,7 +48499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1159452094}
   m_Layer: 0
-  m_Name: Beacon Lights (9)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68343,7 +68343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1497740166}
   m_Layer: 0
-  m_Name: Beacon Lights (11)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73716,7 +73716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1695627217}
   m_Layer: 0
-  m_Name: Beacon Lights (3)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79020,7 +79020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1824887737}
   m_Layer: 0
-  m_Name: Beacon Lights (6)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79491,7 +79491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1863561390}
   m_Layer: 0
-  m_Name: Beacon Lights (4)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88877,7 +88877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2138914872}
   m_Layer: 0
-  m_Name: Beacon Lights (8)
+  m_Name: Slow Strobe Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
