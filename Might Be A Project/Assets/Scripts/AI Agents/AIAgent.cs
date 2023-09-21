@@ -116,10 +116,4 @@ public class AIAgent : MonoBehaviour
         voices.clip = voice;
         voices.Play();
     }
-
-    //public void PlayOtherClip()
-    //{
-       // voices.clip = voice[1];
-       // voices.Play();
-    //}
 }
