@@ -11098,6 +11098,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fcfef80c1b40ba4ab41dcf66d33e831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  fieldOfViewAngle: 90
+  maxSightDistance: 10
 --- !u!1 &274410375
 GameObject:
   m_ObjectHideFlags: 0
