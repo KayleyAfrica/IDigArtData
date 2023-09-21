@@ -10960,6 +10960,7 @@ GameObject:
   - component: {fileID: 264917257}
   - component: {fileID: 264917258}
   - component: {fileID: 264917259}
+  - component: {fileID: 264917260}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -11085,6 +11086,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coolDown: 0
   aiAgent: []
+--- !u!114 &264917260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264917254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fcfef80c1b40ba4ab41dcf66d33e831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &274410375
 GameObject:
   m_ObjectHideFlags: 0
@@ -88774,6 +88787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1907212619}
+  - component: {fileID: 1907212620}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: Untagged
@@ -88818,6 +88832,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907212620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907212618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9fe7d4962d29044997fc5927a166f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 264917256}
+  maxSightDistance: 10
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1910312550
 GameObject:
   m_ObjectHideFlags: 0
